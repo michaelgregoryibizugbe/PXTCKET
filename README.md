@@ -40,11 +40,11 @@
 | New Host Detection | LOW |
 
 ### Performance
-- **uvloop** async event loop (2\u20134x faster than standard asyncio)
+- **uvloop** async event loop 
 - **orjson** JSON serialization (10x faster than stdlib)
-- **Batched UI updates** \u2014 20-packet batches, 20fps drain
-- **Ring-buffer queues** \u2014 never blocks the capture thread
-- **Tiered refresh rates** \u2014 header 10fps, UI 2fps, stats 1fps
+- **Batched UI updates** 20-packet batches, 20fps drain
+- **Ring-buffer queues** never blocks the capture thread
+- **Tiered refresh rates** header 10fps, UI 2fps, stats 1fps
 - **`__slots__`** on hot-path dataclasses
 
 ### Protocol Support
