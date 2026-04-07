@@ -48,18 +48,17 @@
 - **`__slots__`** on hot-path dataclasses
 
 ### Protocol Support
-Ethernet \u2022 IPv4/IPv6 \u2022 TCP \u2022 UDP \u2022 ICMP \u2022 ARP \u2022 DNS \u2022 HTTP
+Ethernet \IPv4/IPv6  \TCP  \UDP \ ICMP \ARP \ DNS \HTTP
 
 ### Export Formats
-PCAP (Wireshark) \u2022 JSON \u2022 CSV \u2022 HTML Report \u2022 Markdown Report
+PCAP (Wireshark) \JSON \CSV \HTML Report \ Markdown Report
 
 ---
 
 ## Installation
 
 ```bash
-# 1. Clone
-git clone https://github.com/yourusername/advanced-packet-analyzer
+# 1. git clone https://github.com/michaelgregoryibizugbe/PXTCKET.git
 cd advanced-packet-analyzer
 
 # 2. Install
