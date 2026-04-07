@@ -1,6 +1,6 @@
 <div align=\"center\">
 
-#Advanced Packet Analyzer
+# Advanced Packet Analyzer
 
 **Professional network packet analyzer with TUI interface and built-in IDS**
 
@@ -15,7 +15,7 @@
 
 ## Features
 
-### \U0001f5a5\ufe0f Ultra TUI Interface
+### Ultra TUI Interface
 - Animated gradient ASCII banner with wave-cycling colors
 - 8-tab interface: Dashboard, Packets, Alerts, Statistics, Sessions, Filters, Export, Help
 - GlowCard stat widgets with hover effects
