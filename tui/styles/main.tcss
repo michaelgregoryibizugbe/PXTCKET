@@ -1,0 +1,164 @@
+/* \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550
+   Advanced Packet Analyzer \u2014 Cyberpunk Theme
+   \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 */
+
+$bg: #020408;
+$panel-bg: #030810;
+$border: #0a2040;
+$accent: #00d4ff;
+$neon-pink: #ff00ff;
+$neon-green: #00ff88;
+$neon-yellow: #ffff00;
+$neon-red: #ff4444;
+$text: #c8d8e8;
+$sub-text: #4488aa;
+
+Screen {
+    background: $bg;
+    color: $text;
+}
+
+HeaderBar {
+    dock: top;
+    height: 3;
+    background: $panel-bg;
+    border-bottom: solid $accent;
+    color: $accent;
+    content-align: center middle;
+    text-style: bold;
+}
+
+#status-bar {
+    dock: bottom;
+    height: 1;
+    background: $panel-bg;
+    color: $sub-text;
+}
+
+/* Tabs */
+TabbedContent {
+    height: 100%;
+}
+
+Tabs {
+    background: $panel-bg;
+    border-bottom: solid $border;
+}
+
+Tab {
+    color: $sub-text;
+}
+
+Tab:hover {
+    color: $accent;
+}
+
+.-active {
+    color: $accent;
+    text-style: bold italic;
+}
+
+/* GlowCards */
+.glow-card {
+    background: $panel-bg;
+    border: tall $border;
+    padding: 1 2;
+    margin: 1;
+    height: 7;
+    width: 1fr;
+}
+
+.glow-card:hover {
+    border: tall $accent;
+    background: #040f20;
+}
+
+.glow-card .label {
+    color: $sub-text;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.glow-card .value {
+    color: $accent;
+    text-style: bold;
+    font-size: 2em;
+}
+
+.glow-card.blue { border: tall $accent; }
+.glow-card.pink { border: tall $neon-pink; }
+.glow-card.green { border: tall $neon-green; }
+.glow-card.yellow { border: tall $neon-yellow; }
+.glow-card.red { border: tall $neon-red; }
+
+/* Dashboard Specific */
+#dashboard-scroll {
+    overflow-y: scroll;
+}
+
+#banner-container {
+    height: 12;
+    margin: 1 2;
+    content-align: center middle;
+}
+
+#stats-grid {
+    layout: grid;
+    grid-size: 3;
+    height: auto;
+}
+
+/* Packet Table */
+PacketTable {
+    height: 1fr;
+    border: solid $border;
+}
+
+DataTable {
+    background: $bg;
+    color: $text;
+    border: none;
+}
+
+DataTable > .datatable--header {
+    background: $panel-bg;
+    color: $accent;
+    text-style: bold;
+}
+
+DataTable > .datatable--cursor {
+    background: #041a30;
+    color: $accent;
+}
+
+/* Alerts */
+AlertList {
+    height: 1fr;
+}
+
+.alert-item {
+    background: $panel-bg;
+    border-left: solid $neon-green;
+    margin: 0 1;
+    padding: 1;
+}
+
+.alert-item.CRITICAL { border-left: solid $neon-red; }
+.alert-item.HIGH { border-left: solid #ff6600; }
+.alert-item.MEDIUM { border-left: solid $neon-yellow; }
+
+Input {
+    background: $panel-bg;
+    border: solid $accent;
+    color: $text;
+}
+
+/* Help */
+.help-section {
+    margin: 1 2;
+}
+
+.help-key {
+    color: $neon-pink;
+    text-style: bold;
+}

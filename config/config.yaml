@@ -1,0 +1,57 @@
+# ═══════════════════════════════════════════════════════
+#   Advanced Packet Analyzer — Configuration
+# ═══════════════════════════════════════════════════════
+
+capture:
+  interface: "auto"
+  promiscuous_mode: true
+  packet_buffer_size: 65535
+  timeout: 0
+  max_packets: 0
+  bpf_filter: ""
+
+analysis:
+  enable_deep_inspection: true
+  enable_dns_resolution: true
+  reassemble_tcp: true
+  decode_http: true
+  decode_dns: true
+  track_sessions: true
+
+detection:
+  enable_ids: true
+  enable_anomaly_detection: true
+  port_scan_threshold: 10
+  syn_flood_threshold: 100
+  icmp_flood_threshold: 50
+  dns_amplification_threshold: 512
+  arp_spoof_detection: true
+  suspicious_ports:
+    - 4444
+    - 1337
+    - 31337
+    - 6666
+    - 6667
+    - 9001
+    - 9030
+
+thresholds:
+  max_connections_per_ip: 100
+  max_bandwidth_mbps: 1000
+  alert_on_new_host: false
+  exfil_threshold_mb: 10
+
+export:
+  pcap_output: "captures/"
+  json_output: "reports/"
+  csv_output: "reports/"
+  log_file: "logs/analyzer.log"
+  alert_log: "logs/alerts.log"
+  auto_export: false
+  export_interval: 300
+
+display:
+  refresh_rate: 1
+  max_packets_display: 2000
+  color_output: true
+  verbose: false
