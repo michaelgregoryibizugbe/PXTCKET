@@ -1,6 +1,6 @@
 <div align=\"center\">
 
-# \U0001f50d Advanced Packet Analyzer
+#Advanced Packet Analyzer
 
 **Professional network packet analyzer with TUI interface and built-in IDS**
 
@@ -13,7 +13,7 @@
 
 ---
 
-## \u2728 Features
+## Features
 
 ### \U0001f5a5\ufe0f Ultra TUI Interface
 - Animated gradient ASCII banner with wave-cycling colors
@@ -23,7 +23,7 @@
 - Dual-channel bandwidth + PPS sparklines
 - Real-time threat ticker feed
 
-### \U0001f6e1\ufe0f IDS Engine (14 Detection Types)
+### IDS Engine (14 Detection Types)
 | Detection | Severity |
 |-----------|----------|
 | Port Scan (H/V/Stealth) | MEDIUM\u2013CRITICAL |
@@ -39,7 +39,7 @@
 | Suspicious DNS (DGA) | MEDIUM |
 | New Host Detection | LOW |
 
-### \u26a1 Performance
+### Performance
 - **uvloop** async event loop (2\u20134x faster than standard asyncio)
 - **orjson** JSON serialization (10x faster than stdlib)
 - **Batched UI updates** \u2014 20-packet batches, 20fps drain
@@ -47,15 +47,15 @@
 - **Tiered refresh rates** \u2014 header 10fps, UI 2fps, stats 1fps
 - **`__slots__`** on hot-path dataclasses
 
-### \U0001f4e1 Protocol Support
+### Protocol Support
 Ethernet \u2022 IPv4/IPv6 \u2022 TCP \u2022 UDP \u2022 ICMP \u2022 ARP \u2022 DNS \u2022 HTTP
 
-### \U0001f4e4 Export Formats
+### Export Formats
 PCAP (Wireshark) \u2022 JSON \u2022 CSV \u2022 HTML Report \u2022 Markdown Report
 
 ---
 
-## \U0001f680 Installation
+## Installation
 
 ```bash
 # 1. Clone
@@ -71,7 +71,7 @@ sudo python main.py
 
 ---
 
-## \U0001f4d6 Usage
+## Usage
 
 ```bash
 sudo python main.py                         # Auto-detect interface
@@ -100,7 +100,7 @@ python main.py --read capture.pcap         # Offline PCAP analysis
 
 ---
 
-## \u2699\ufe0f Configuration
+## Configuration
 
 Edit `config/config.yaml`:
 
@@ -113,7 +113,7 @@ detection:
 
 ---
 
-## \U0001f9ea Testing
+## Testing
 
 ```bash
 make test           # Full test suite with coverage
@@ -123,7 +123,7 @@ make lint           # Syntax check all modules
 
 ---
 
-## \u26a0\ufe0f Legal Disclaimer
+## Legal Disclaimer
 
 This tool is for **educational purposes and authorized security testing only**.
 Only use on networks you own or have **explicit written permission** to analyze.
@@ -131,6 +131,6 @@ Unauthorized network interception may violate laws in your jurisdiction.
 
 ---
 
-## \U0001f4c4 License
+## License
 
 MIT License \u2014 see [LICENSE](LICENSE)
